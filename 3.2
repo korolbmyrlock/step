@@ -1,0 +1,59 @@
+2) 
+from math import atan, inf
+def f(x):
+    return 2*atan(x)  
+    
+
+lim = f(inf)
+print (round(lim,3))
+
+3)
+import math
+
+def def_e(x, dx=0.00001):
+    return (math.exp(x + dx) - math.exp(x)) / dx
+
+4) 
+def even_indeces(l):
+    return l[::2]
+5)
+def even_elements(l):
+    return [x for x in l if x%2==0]
+
+6) 
+def last_to_first(l):
+    return l[::-1]
+7) print(sum(e for e in range(0,int(input())+1,5) if e%3))
+8) 
+def common(a, b):
+    return set(a)&set(b)
+9) 
+def front_x(words):
+    return sorted(words, key=lambda x: (x[:1] != 'x', x))
+
+10) 
+def fib(n):
+    a = b = 1
+    for _ in range(n - 2):
+        a, b = b, a + b
+    return b
+
+11) 
+
+def is_prime(n):
+    return not any(i for i in range(2, int(n ** 0.5) + 1) if not n % i)
+
+12) 
+n = int(input())  
+print((f'Всего пончиков: {n}','Всего пончиков: много')[n>9])
+
+13) 
+s = input()
+print([s[:2]+s[-2:],''][len(s) < 2])
+
+14) 
+
+s = input()
+def fix_start(s):
+    return s[0]+s[1:].replace(s[0], '*')
+print(fix_start(s))
