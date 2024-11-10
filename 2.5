@@ -1,0 +1,9 @@
+3) print({'1': 'I', '5': 'V', '10' : 'X', '50' : 'L', '100': 'C', '500': 'D', '1000': 'M'}[input()])
+6) (lambda s: print(f'{int(input())/s:.1f}' if s else 'Division by zero!'))(int(input()))
+8) 
+
+d = {'int': (2, lambda a, b: int(a) + int(b) if int(a) or int(b) else 'Empty Ints'),
+     'str': (1, lambda s: s if s else 'Empty String'),
+     'list': (1, lambda l: l.split()[-1] if l else "Empty List")}
+t = input()
+print(d[t][1](*[input() for _ in range(d[t][0])]) if t in d else "Unknown type")
