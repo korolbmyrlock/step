@@ -1,1 +1,28 @@
+4) 
+a, b = [int(input()) for i in (1, 2)]
+print(a+b, a-b, b-a, a*b, a/b, b%a, a**b, sep='\n')
+
+5) print(int(input()) // int(input()))
+
+6) 
+a,b,c = [int(input()) for _ in range(3)]
+print(a+b+c)
+p = (a+b+c)/2
+print((p*(p-a)*(p-b)*(p-c))**0.5)
+
+8) 
+s = float(input()) * float(input()) / 2
+print(f'{int(s)}\n{round(s,1)}\n{s}')
+
+9)
+a = float(input())
+S = 11 * (a ** 2) * (3 ** 0.5) / 4
+print(round(S))
+
+10) print(round(3 * int(input()) ** 2 * (1 + 5 / 8 * 3 ** 0.5)))
+11) print((lambda a: "%.2f\n%.2f"%(20.64573*a**2, 7.66312*a**3))(int(input())))
+12) 
+l, v1, v2, vm = map(int, (input() for _ in ('l', 'v1', 'v2', 'vm')))
+print(round(l / (v1 + v2) * vm))
+
 
