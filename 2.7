@@ -1,0 +1,27 @@
+2) двоеточие после имени функции перед телом функции; имя функции; ключевое слово def; тело функции (с отступами, аналогично if, while, for...)
+3) 
+(1)
+from math import exp
+def f(x):
+    return (exp(x) - 1) / x
+
+4) sum2 = lambda a,b: a+b
+6) Hello = lambda x = "%UserName%": print(f"Hello, {x}!")
+8) 
+def dfactorial(n):
+    return n * dfactorial(n-2) if n > 1 else 1
+
+9) Kfactorial = lambda n, k=1: (n<1)+0 or Kfactorial(n-k, k)*n
+10)
+def convert(L):
+    return list(map(int, L))
+11) 
+def translate(n, k=2):
+    return n % k if n < k else n % k + translate(n // k, k)*10
+
+13) 
+def factorial(n): return 1 if n<=0 else n*factorial(n-1)
+    
+def sf(n): return 1 if n<=0 else factorial(n)*sf(n-1)
+
+14) maxId = lambda L: L.index(max(L, key=int))
