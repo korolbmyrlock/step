@@ -1,0 +1,33 @@
+3) print(open(input()).read())
+4) print(sum(map(int,open(input()).readlines())))
+5) print(open(input(), 'r').readlines()[-2])
+6) 
+
+with open(sheet) as sh:
+    marks = []
+    for line in sh:
+        if '(экзамен)' in line or '(автомат)' in line:
+            marks.append(line.split()[-2])
+with open(mean) as mn:
+    if float(mn.read()) == sum(map(int, marks)) / len(marks):
+        print('OK')
+    else: print('ERROR')
+
+9) open("CompanyData/YearlyProjection.csv", "r")
+12) 
+
+import os.path
+
+file_path = input()
+
+if not os.path.exists(file_path):
+    print(f"ERROR:\nФайл не существует")
+elif not os.path.isfile(file_path):
+    print(f"ERROR:\nЭто каталог, а не файл")
+else:
+    with open(file_path) as fd:
+        print(f"CONTENT:\n{fd.read()}")
+
+14)
+with open('output.txt', 'w') as f:
+    f.write(input())
